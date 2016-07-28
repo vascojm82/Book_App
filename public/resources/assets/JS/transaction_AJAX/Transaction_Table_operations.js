@@ -141,6 +141,9 @@ function transaction_edit(){
                   }
             });
 
+            $('#transaction_form_return_override_label').addClass('hidden');
+            $('#transaction_form_return_date_invalid').addClass('hidden');
+            $('#transaction_form_return_date_past_due').addClass('hidden');
             $('#transactionForm_transactionId').closest('.form-group').removeClass('hidden');
             $('#transactionForm_Return_date').removeClass('hidden');
             $('#transactionForm_Type').addClass('validated');
@@ -394,17 +397,56 @@ function validate_expected_return_date(){
 }
 
 function validate_return_date(){
-      var return_date = $('#transactionForm_Return_date');
+      var selected_return_date = new Date($('#transactionForm_Return_date').val()),
+          check = $('#override_checkbox'),
+          return_date = $('#transactionForm_Return_date'),
+          issue_date  = new Date($('#transactionForm_label_Issue_date').text()),
+          expected_return_date = new Date($('#transactionForm_label_ERD').text());
 
       // Check if there is an entered value for return_date
-      if(!return_date.val()) {
+      if(!selected_return_date || (selected_return_date < issue_date) ) {
             // Add errors highlight
             return_date.closest('.form-group').removeClass('has-success').addClass('has-error');
             return_date.removeClass('validated');                                                     //Flagging input text as NOT been validated
-      } else {
+            $('#transaction_form_return_date_past_due').addClass('hidden');
+            $('#transaction_form_return_date_invalid').removeClass('hidden');
+            $('#transaction_form_return_override_label').addClass('hidden');
+            check.prop('checked', false);
+      }
+      else if(selected_return_date > expected_return_date){
+            return_date.closest('.form-group').removeClass('has-success').addClass('has-error');
+            return_date.removeClass('validated');
+            $('#transaction_form_return_date_invalid').addClass('hidden');
+            $('#transaction_form_return_override_label').removeClass('hidden');
+            $('#transaction_form_return_date_past_due').removeClass('hidden');
+      }
+      else {
             // Remove the errors highlight
             return_date.closest('.form-group').removeClass('has-error').addClass('has-success');
             return_date.addClass('validated');                                                         //Flagging input text as been validated
+            $('#transaction_form_return_date_invalid').addClass('hidden');
+            $('#transaction_form_return_date_past_due').addClass('hidden');
+            $('#transaction_form_return_override_label').addClass('hidden');
+            check.prop('checked', false);
+      }
+}
+
+function override_check(){
+      var check = $('#override_checkbox').is(":checked"),
+          return_date = $('#transactionForm_Return_date'),
+          submit = $('#transactionForm_Submit');
+
+      if(check){
+            return_date.closest('.form-group').removeClass('has-error').addClass('has-success');
+            return_date.addClass('validated');
+            $('#transaction_form_return_date_past_due').addClass('hidden');
+            submit.removeAttr('disabled');
+      }
+      else{
+            return_date.closest('.form-group').removeClass('has-success').addClass('has-error');
+            return_date.removeClass('validated');
+            $('#transaction_form_return_date_past_due').removeClass('hidden');
+            submit.prop('disabled', 'disabled');
       }
 }
 

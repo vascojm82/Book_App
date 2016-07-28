@@ -70,6 +70,11 @@
                     <label class="col-sm-2 control-label" for="transactionForm_Return_date" >Return Date</label>
                     <div class="col-sm-10">
                         <input type="date" class="transaction_input form-control required validated" name="transactionForm_Return_date" id="transactionForm_Return_date" onblur="validate_return_date()"/>
+                        <span class="label label-danger hidden" id="transaction_form_return_date_invalid">Invalid Date. &nbsp;&nbsp;You cannot enter a date before the issue date.</span>
+                        <span class="label label-danger hidden" id="transaction_form_return_date_past_due">This date is past due.</span>
+                        <div class="checkbox" id="override">
+                              <label id="transaction_form_return_override_label"><input type="checkbox" id="override_checkbox" onclick="override_check()">Override</label>
+                        </div>
                     </div>
                   </div>
 

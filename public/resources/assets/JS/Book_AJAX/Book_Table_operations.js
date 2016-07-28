@@ -272,7 +272,7 @@ function validate_category(){
 
 function validate_author(){
       var author = $('#bookForm_Author'),
-          misc_regX = /^[a-zA-Z0-9\#\&\.\:\+\,\' ]+$/;
+          misc_regX = /^[a-zA-Z\#\&\.\:\+\,\' ]+$/;
 
       // Check if there is an entered value for author and if value is correct
       if(!author.val() || !misc_regX.test(author.val())) {

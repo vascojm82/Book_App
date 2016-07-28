@@ -23,12 +23,6 @@ INSERT INTO `book` (`bookId`, `ISBN`, `name`, `details`, `category`, `author`, `
 	(18, '1785283014', 'Laravel 5 Essentials', 'Learn Laravel 5 Essentials', 'IT', 'Martin Bean', '2015-04-30', 4, 0);
 /*!40000 ALTER TABLE `book` ENABLE KEYS */;
 
-/*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
-INSERT INTO `migrations` (`migration`, `batch`) VALUES
-	('2016_07_01_170031_book', 1),
-	('2016_07_01_210817_transaction', 2);
-/*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
-
 /*!40000 ALTER TABLE `transaction` DISABLE KEYS */;
 INSERT INTO `transaction` (`transactionId`, `bookId`, `transaction_type`, `transaction_date`, `issue_date`, `expected_return_date`, `return_date`) VALUES
 	(26, 43, 'return', '2016-07-26', '2016-07-26', '2016-08-13', '2016-08-12'),

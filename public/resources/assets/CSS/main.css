@@ -1,0 +1,150 @@
+body {
+    background-image: url("/resources/assets/IMG/linedpaper.png");
+}
+
+/*Space between header and tables containers*/
+.header{
+    margin-bottom: 1%;
+}
+
+/*Header text style*/
+h1.title{
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/*Table borders*/
+.table {
+  border: 0.5px solid #000000;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+   border: 0.5px solid #000000;
+}
+
+/*Table heading background*/
+table th {
+  background-color: LightGray;
+}
+
+/*Table row on hover*/
+table tr:hover td {
+  background-color: Navy; //#0088CC;
+  color:white;
+}
+
+/*Table row when clicked by user*/
+table.dataTable tbody > tr.selected, table.dataTable tbody > tr > .selected {
+    background-color: Navy;
+    color: white;
+}
+
+/*Pagination buttons color*/
+.pagination > .active > a, .pagination > .active > span, .pagination > .active
+> a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    background-color: Navy;
+    border-color: Navy;
+}
+
+/*Pagination buttons text*/
+.pagination > li > a, .pagination > li > span {
+    color: Navy;
+}
+
+/*Table caption(title)*/
+.captions{
+    text-align: center;
+    font-size: 30px;
+}
+
+/*Buttons*/
+.btn{
+    background-color: #e6e6e6;
+    color: black;
+    /*font-size: 18px;*/
+}
+
+/*Buttons on hover*/
+.btn:hover{
+    background-color:#ddd;
+}
+
+.modal-body .form-horizontal .col-sm-2,
+.modal-body .form-horizontal .col-sm-10 {
+    width: 100%
+}
+
+.modal-body .form-horizontal .control-label {
+    text-align: left;
+}
+.modal-body .form-horizontal .col-sm-offset-2 {
+    margin-left: 15px;
+}
+
+.modal-header{
+    background-color: LightGray;
+}
+
+.modal-dialog{
+    width: 25%;
+}
+
+.book_input{
+
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control
+{
+    background-color:white;
+}
+
+.ID_label {
+    display:block;
+    background-color: white;
+    color:black;
+    text-align: left;
+    border: 1px solid #ccc;
+    height: 35px;
+    font-size: 14px;
+    font-weight: lighter;
+
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
+    background-color: white;
+}
+
+.label-danger{
+    font-size: 12px;
+    background-color: white;
+    color:red;
+}
+
+/****Change the size of the header and table captions depending on screen size*/
+@media(max-width: 207px){
+    h1.title{
+        font-size: 20pt;
+    }
+    .captions{
+        font-size: 17pt;
+    }
+}
+
+@media(min-width:208px)  and (max-width: 377px){
+    h1.title{
+        font-size: 30pt;
+    }
+
+    .captions{
+        font-size: 20pt;
+    }
+}
+/*****************/

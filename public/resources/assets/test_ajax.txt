@@ -1,0 +1,191 @@
+{
+  "data": [
+    {
+      "bookId": 1,
+      "ISBN": "0321616952",
+      "name": "Designing with web standards",
+      "details": "Web Design Concepts and Best Practices",
+      "category": "IT",
+      "author": "Jeffrey Zeldman",
+      "publish_date": "2009-10-25",
+      "on_hand": 5,
+      "on_loan": 1
+    },
+    {
+      "bookId": 4,
+      "ISBN": "1890774855",
+      "name": "Murachs Javascript 2nd Edition",
+      "details": "Good Hands on introduction to Javascript",
+      "category": "IT",
+      "author": "Mary Delamater",
+      "publish_date": "2015-09-22",
+      "on_hand": 6,
+      "on_loan": 0
+    },
+    {
+      "bookId": 3,
+      "ISBN": "9781890774912",
+      "name": "Murachs JQuery 2nd Edition",
+      "details": "Good Hands on introduction to JQuery",
+      "category": "IT",
+      "author": "Zak Rubalcaba",
+      "publish_date": "2015-09-01",
+      "on_hand": 4,
+      "on_loan": 0
+    },
+    {
+      "bookId": 5,
+      "ISBN": "1890774790",
+      "name": "Murachs PHP & MYSQL 2nd Edition",
+      "details": "Good Hands on introduction to PHP & MySQL",
+      "category": "IT",
+      "author": "Joel Murach",
+      "publish_date": "2014-12-01",
+      "on_hand": 5,
+      "on_loan": 0
+    },
+    {
+      "bookId": 6,
+      "ISBN": "1783553812",
+      "name": "AngularJS by Example",
+      "details": "Good Hands on introduction to AngularJS",
+      "category": "IT",
+      "author": "Chandermani",
+      "publish_date": "2015-02-26",
+      "on_hand": 4,
+      "on_loan": 0
+    },
+    {
+      "bookId": 7,
+      "ISBN": "1783551623",
+      "name": "React.js Essentials",
+      "details": "Good Hands on introduction to ReactJS",
+      "category": "IT",
+      "author": "Artemij Fedosejev",
+      "publish_date": "2016-01-01",
+      "on_hand": 5,
+      "on_loan": 0
+    },
+    {
+      "bookId": 8,
+      "ISBN": "1890774944",
+      "name": "Murachs C# 2015",
+      "details": "Good Hands on introduction to C#",
+      "category": "IT",
+      "author": "Joel Murach",
+      "publish_date": "2016-02-05",
+      "on_hand": 6,
+      "on_loan": 0
+    },
+    {
+      "bookId": 9,
+      "ISBN": "1890774758",
+      "name": "Murachs ASP.NET 4.5 Web Programming with C# 2012",
+      "details": "Good Hands on introduction to ASP.NET",
+      "category": "IT",
+      "author": "Mary Delamater",
+      "publish_date": "2013-08-07",
+      "on_hand": 4,
+      "on_loan": 0
+    },
+    {
+      "bookId": 10,
+      "ISBN": "1617292036",
+      "name": "Getting MEAN with Mongo, Express, Angular, and Node 1st Edition",
+      "details": "Good Hands on introduction to the MEAN Stack",
+      "category": "IT",
+      "author": "Simon Holmes",
+      "publish_date": "2015-11-26",
+      "on_hand": 6,
+      "on_loan": 0
+    },
+    {
+      "bookId": 11,
+      "ISBN": "1890774693",
+      "name": "Murachs SQL Server 2012 for Developers",
+      "details": "Good Hands on training for Microsoft SQL Server 2012",
+      "category": "IT",
+      "author": "Joel Murach",
+      "publish_date": "2012-08-20",
+      "on_hand": 5,
+      "on_loan": 0
+    },
+    {
+      "bookId": 12,
+      "ISBN": "1491936088",
+      "name": "Laravel: Up and Running: A Framework for Building Modern PHP Apps 1st Edition",
+      "details": "Good Hands on training for Laravel",
+      "category": "IT",
+      "author": "Matt Stauffer",
+      "publish_date": "2016-02-15",
+      "on_hand": 4,
+      "on_loan": 0
+    },
+    {
+      "bookId": 13,
+      "ISBN": "1784391581",
+      "name": "Learning Laravels Eloquent",
+      "details": "Good Hands on training for Laravel Eloquent",
+      "category": "IT",
+      "author": "Francesco Malatesta",
+      "publish_date": "2015-09-01",
+      "on_hand": 4,
+      "on_loan": 0
+    },
+    {
+      "bookId": 14,
+      "ISBN": "0134077709",
+      "name": "Ruby on Rails Tutorial: Learn Web Development with Rails 3rd Edition",
+      "details": "Good Hands on training for Ruby On Rails",
+      "category": "IT",
+      "author": "Michael Hart",
+      "publish_date": "2015-05-09",
+      "on_hand": 3,
+      "on_loan": 0
+    },
+    {
+      "bookId": 15,
+      "ISBN": "0321563840",
+      "name": "The C++ Programming Language, 4th Edition",
+      "details": "Training from the creator of C++",
+      "category": "IT",
+      "author": "Bjarne Stroustrup",
+      "publish_date": "2013-05-19",
+      "on_hand": 6,
+      "on_loan": 0
+    },
+    {
+      "bookId": 16,
+      "ISBN": "0131409093",
+      "name": "ADTs, Data Structures, and Problem Solving with C++ 2nd Edition",
+      "details": "Learn data structures and algorithms in C++",
+      "category": "IT",
+      "author": "Larry R. Nyhoff",
+      "publish_date": "2004-08-05",
+      "on_hand": 6,
+      "on_loan": 0
+    },
+    {
+      "bookId": 17,
+      "ISBN": "0071808558",
+      "name": "Java: The Complete Reference, 9th Edition",
+      "details": "Oracle Java Reference",
+      "category": "IT",
+      "author": "Herbert Schildt",
+      "publish_date": "2014-04-01",
+      "on_hand": 5,
+      "on_loan": 0
+    },
+    {
+      "bookId": 18,
+      "ISBN": "1785283014",
+      "name": "Laravel 5 Essentials",
+      "details": "Learn Laravel 5 Essentials",
+      "category": "IT",
+      "author": "Martin Bean",
+      "publish_date": "2015-04-30",
+      "on_hand": 4,
+      "on_loan": 0
+    }
+  ]
+}

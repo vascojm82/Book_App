@@ -1,0 +1,85 @@
+<!-- Modal -->
+<div class="modal fade" id="transaction_form_modal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button id="btn_transaction_close" type="button" onclick="transaction_form_close()" class="close" data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h3 class="modal-title" id="transaction_form_label">Transactions Form</h3>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <form id="transaction_form" class="form-horizontal" role="form">
+                  <div class="form-group transaction_edit">
+                    <label  class="col-sm-2 control-label" for="transactionForm_transactionId">TransactionID</label>
+                    <div class="col-sm-10">
+                        <span class="label label-default ID_label" id="transactionForm_transactionId"></span>
+                        <span class="label label-danger hidden" id="transaction_form_transactionId_cannot_edit">This transaction has a return date and cannot be edited.</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="transactionForm_label_type" >Type</label>
+                    <div class="col-sm-10">
+                        <span class="label label-default ID_label" id="transactionForm_label_type"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="transactionForm_BookId" >BookID</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="transaction_input form-control required" id="transactionForm_BookId" onblur="validate_book_Id()" />
+                        <span class="label label-danger hidden" id="transaction_form_bookId_not_found">Book was not found.</span>
+                        <span class="label label-danger hidden" id="transaction_form_bookId_invalid"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="transactionForm_label_BookId" >BookID</label>
+                    <div class="col-sm-10">
+                        <span class="label label-default ID_label" id="transactionForm_label_BookId"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="transactionForm_Issue_date" >Issue Date</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="transaction_input form-control required" name="transactionForm_Issue_date" id="transactionForm_Issue_date" onblur="validate_issue_date()" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="transactionForm_label_Issue_date" >Issue Date</label>
+                    <div class="col-sm-10">
+                        <span class="label label-default ID_label" id="transactionForm_label_Issue_date"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="transactionForm_label_ERD" >Expected Return Date</label>
+                    <div class="col-sm-10">
+                        <span class="label label-default ID_label" id="transactionForm_label_ERD"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="transactionForm_ERD" >Expected Return Date</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="transaction_input form-control required" name="transactionForm_ERD" id="transactionForm_ERD" onblur="validate_expected_return_date()"/>
+                        <span class="label label-danger hidden" id="transaction_form_erd_invalid">Invalid Date. &nbsp;&nbsp;You cannot enter a date before or equal to the issue date.</span>
+                    </div>
+                  </div>
+                  <div class="form-group transaction_edit">
+                    <label class="col-sm-2 control-label" for="transactionForm_Return_date" >Return Date</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="transaction_input form-control required validated" name="transactionForm_Return_date" id="transactionForm_Return_date" onblur="validate_return_date()"/>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-10">
+                      <button type="submit" id="transactionForm_Submit" class="btn btn-default" disabled>Submit</button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>

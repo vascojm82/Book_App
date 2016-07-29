@@ -1,23 +1,84 @@
-body {
-    background-image: url("/resources/assets/IMG/linedpaper.png");
-}
-
 /*Space between header and tables containers*/
-.header{
-    margin-bottom: 1%;
+.applicationheader{
+    background-color: #d98e7c;
 }
 
 /*Header text style*/
 h1.title{
+    padding: 0.5%;
+    font-size: 4.13em;
+    font-family: calibri;
+    font-style: normal;
     text-align: center;
-    font-size: 80px;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
+    color: #ffffff;
+    /*text-shadow: 2px 2px 4px #000000;*/
+    margin: 0 !important;
+    font-weight: lighter;
+}
+
+#books{
+    background-color: #7fccb9;
+    text-align: center;
+    height: 50px;
+    padding-top: 5px;
+    color: #ffffff;
+}
+
+#triangle-right{
+    background-color: #7fccb9;
+    padding-right: 0 !important;
+}
+
+#triangle-right::after{
+      content: "";
+      display: block;
+      float: right;
+      background-color: #9fd9cb;
+      border-top: 25px solid transparent;
+      border-left: 40px solid #7fccb9;
+      border-bottom: 25px solid transparent;
+}
+
+#transactions{
+      background-color: #9fd9cb;
+      text-align: center;
+      padding-top: 5px;
+      height: 50px;
+      color: #ffffff;
+}
+
+h3, .h3 {
+    font-size: 2.2em;
+    font-family: calibri;
+    font-style: normal;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.button_block{
+      background-color: #f2f2f2;
+      padding-bottom: 5px;
+
+}
+
+.inner_container{
+      border: 1.5px solid #b3b3b3;
+      background-color: white;
+      height: 75vh;
+}
+
+.outer_container{
+      background-color: #f2f2f2;
+}
+
+.panel-footer{
+      padding: 8px;
+      background-color: #f2f2f2;
 }
 
 /*Table borders*/
 .table {
-  border: 0.5px solid #000000;
+  border: 1px solid #b3b3b3;
 }
 
 .table-bordered > thead > tr > th,
@@ -31,32 +92,46 @@ h1.title{
 
 /*Table heading background*/
 table th {
-  background-color: LightGray;
+  background-color: #9fd9cb;
 }
 
 /*Table row on hover*/
 table tr:hover td {
-  background-color: Navy; //#0088CC;
-  color:white;
+  background-color: #E0F3EE;
+  color:black;
+}
+
+table.dataTable tr.odd{
+  background-color: #F7F7F7;
+}
+
+table.dataTable tr.even{
+  background-color: white;
 }
 
 /*Table row when clicked by user*/
 table.dataTable tbody > tr.selected, table.dataTable tbody > tr > .selected {
-    background-color: Navy;
-    color: white;
+    background-color: #E0F3EE;
+    color: black;
 }
 
 /*Pagination buttons color*/
 .pagination > .active > a, .pagination > .active > span, .pagination > .active
 > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-    background-color: Navy;
-    border-color: Navy;
+    background-color: #9fd9cb;
+    border-color: black;
 }
 
 /*Pagination buttons text*/
 .pagination > li > a, .pagination > li > span {
-    color: Navy;
+    color: black;
+}
+
+/*Pagination buttons hover background color*/
+.pagination > li > a:hover, .pagination > li > span:hover {
+    background-color: #e0f3ee;
+    color: black;
 }
 
 /*Table caption(title)*/
@@ -66,20 +141,53 @@ table.dataTable tbody > tr.selected, table.dataTable tbody > tr > .selected {
 }
 
 /*Buttons*/
-.btn{
-    background-color: #e6e6e6;
-    color: black;
-    /*font-size: 18px;*/
+.btn-toolbar .btn, .btn-toolbar .btn-group, .btn-toolbar .input-group {
+    background-color: #40665d;
+    color: white;
+}
+
+.btn-toolbar{
+    margin-top:8px  !important;
+    margin-bottom: 3px !important;
+}
+
+.btn-default {
+    color: white;
+    background-color: #40665d;
+    border-color: #40665d;
+    border-radius: 0;
+    padding: 5px 30px 5px 30px;
 }
 
 /*Buttons on hover*/
 .btn:hover{
-    background-color:#ddd;
+    background-color:white;
+    color: black;
+    border-color: #40665d;
+    border: 1px solid;
+}
+
+.btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled]
+.btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus, .btn-default.disabled.focus,
+.btn-default[disabled].focus, fieldset[disabled] .btn-default.focus {
+    background-color:#40665d;
+    color: white;
+}
+
+.jconfirm.jconfirm-white .jconfirm-box .buttons button{
+    color: white !important;
 }
 
 .modal-body .form-horizontal .col-sm-2,
 .modal-body .form-horizontal .col-sm-10 {
     width: 100%
+}
+
+.jconfirm.jconfirm-white .jconfirm-box .buttons button.btn-default:hover {
+    background: white !important;
+    color: black !important;
+    border: 1px solid black  !important;
 }
 
 .modal-body .form-horizontal .control-label {
@@ -89,8 +197,8 @@ table.dataTable tbody > tr.selected, table.dataTable tbody > tr > .selected {
     margin-left: 15px;
 }
 
-.modal-header{
-    background-color: LightGray;
+.modal-title, .modal-header{
+    background-color: #9fd9cb  !important;
 }
 
 .modal-dialog{

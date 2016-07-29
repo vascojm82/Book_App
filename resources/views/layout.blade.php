@@ -13,18 +13,29 @@
         <title>Book App</title>
     </head>
     <body>
-        <div class="header container">
-            <div class="page-header">
-                <h1 class="title">Book App</h1>
-            </div>
-        </div>
         <div class="container-fluid">
-            <div class="row">
+              <div class="applicationheader">
+                  <div>
+                      <h1 class="title">Book Transactions</h1>
+                  </div>
+              </div>
+              <div>
+                  <div class="col-md-5" id="books">
+                        <h3 class="table_title">Books</h3>
+                  </div>
 
-                @yield('tables')
+                  <div class="col-md-1" id="triangle-right"></div>
 
-            </div>
-          </div>
+                  <div class="col-md-6" id="transactions">
+                        <h3 class="table_title">Transactions</h3>
+                  </div>
+              </div>
+              <div>
 
+                      @yield('tables')
+
+              </div>
+        </div>
+        <div class="panel-footer text-center"><h5>For Demo Purposes Only</h5></div>
     </body>
 </html>

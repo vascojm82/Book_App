@@ -60,9 +60,15 @@ class transactionController extends Controller
 
 
 
-      public function testSave(){
-          return view('test.AJAX_transaction_save');
-      }
+
+
+
+
+
+
+      // public function testSave(){
+      //     return view('test.AJAX_transaction_save');
+      // }
       //
       // public function testUpdate(){
       //     return view('test.AJAX_transaction_update');
